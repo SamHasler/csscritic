@@ -40,7 +40,6 @@ csscriticLib.main = function (regression, reporting, util, storage, selectionFil
             _add_recurs(augmentedTestCase);
           });
         } else {
-          console.log("END RECUR")
           augmentedTestCase = util.clone(supportUrlAsOnlyTestCaseInput(testCase));
           if (currentComponentLabel && augmentedTestCase.component === undefined) {
               augmentedTestCase.component = currentComponentLabel;
